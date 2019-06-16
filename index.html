@@ -1,64 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Victor Araya Romero</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <nav>
-                <ul>
+            <figure class="logo">
+                <img src="images/logo.png" alt="Logo de http://leonidasesteba.com">
+            </figure>
+            <nav class="menu">
+                <ol>
                     <li>
-                        <a>Portafolio</a>
+                        <a class="link" href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a>Experiencia</a>
+                        <a class="link" href="#experiencias">Experiencia</a>
                     </li>
                     <li>
-                        <a>Trabajemos Juntos</a>
+                        <a class="link" href="#contacto">Trabajemos Juntos</a>
                     </li>
-                </ul>
+                </ol>
             </nav>
         </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             Hola, Soy <strong> Victor Araya </strong>, soy <br/> Desarrollador <strong> Full Stack </strong>, <br/> y me encanta aprender!
         </h1>
-        <img src="" alt=""> Imagen de Portada
+        <img src="images/hero.jpg" width="500px" height="300px" alt="Imagen principal del sitio">
     </section>
-    <section>
-        <h2>Portafolio (Proyectos Descatados)</h2>
-        <article>
-            <h3>Proyecto 1</h3>
-            <h6>HTML/CSS/Javascript/Bootstrap</h6>
-            <p><small><strong>Fecha:</strong> 10/07/2019</small></p>
-            <p><small><strong>Puedes verlo en: </strong> URL</small></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper integer dui, 
+    <section id="portafolio" class="portfolio">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
+            <h3 class="project_title">Proyecto 1</h3>
+            <h6 class="project_languages">HTML/CSS/Javascript/Bootstrap</h6>
+            <p class="project_date"><small><strong>Fecha:</strong> 10/07/2019</small></p>
+            <p class="project_url"><small><strong>Puedes verlo en: </strong> URL</small></p>
+            <p class="project_description">Lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper integer dui, 
                 magna lacus faucibus condimentum arcu leo montes fusce ligula habitasse rhoncus, 
                 tristique ornare velit egestas diam curabitur aliquet nec vulputate. 
                 Maecenas vivamus scelerisque laoreet gravida rutrum hendrerit netus ultrices nisl, 
                 lacus convallis mattis nam euismod vulputate condimentum massa auctor mauris, 
                 ut dapibus bibendum sapien feugiat aptent montes proin.</p>
+            <figure class="project_imageContainer">
+                    <img class="project_image" src="images/platzi-video-react-native.png" width="500px" alt="Proyecto 1">
+            </figure>
         </article>
     </section>
-    <section>
+    <section id="experiencias">
         <h2>Más sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="" alt="">
+        <article class="experience">
+            <figure class="experience_imageContainer">
+                <img class="experience_image" src="images/platzi-conf.jpg" width="500px" alt="">
             </figure>
-            <h3>Proyecto Propio 2018</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper integer dui, 
+            <h3 class="experience_title">Proyecto Propio 2018</h3>
+            <p class="experience_description">Lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper integer dui, 
             magna lacus faucibus condimentum arcu leo montes fusce ligula habitasse rhoncus, 
             tristique ornare velit egestas diam curabitur aliquet nec vulputate.</p>
-            <a href="">Ir a Ver</a>
+            <a class="experience_URL" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ir a Ver</a>
         </article>
     </section>
-    <section>Sección Contacto</section>
-    <footer>Footer</footer>
+    <section id="contacto" class="contact">
+        <form action="/suscripcion/" class="form_email">
+            <h3>¡Hagamos algún proyecto juntos!</h3>
+            <input type="text" placeholder="Dejame tu e-mail" id="e-mail">
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer class="footer">Footer</footer>
 </body>
 </html>
